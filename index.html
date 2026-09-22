@@ -1,21 +1,554 @@
-<html> 
-    <head>
-        <title>My Portfolio</title>
-    </head>
-    <body>
-        <h1>About Me</h1>
-        <p>My name is Himani Shrestha, and I am a Bachelor’s student in Information Technology. I am passionate about technology and enjoy learning new things. I am interested in programming, web development, and exploring new technologies. My goal is to build my knowledge and grow as a successful IT professional.</p>
-         <h2>My Skills</h2>
-        <p>I have basic knowledge of HTML, CSS, JavaScript, and Python. I also have knowledge of database management and web development. I have good problem-solving, communication, and teamwork skills. I am always interested in improving my skills and learning new technologies.</p>
-        <h1>My Project</h1>
-        <p>During my IT studies, I have worked on various academic projects. These projects have helped me develop my programming and technical skills. I enjoy creating simple and useful technology-based solutions. I look forward to working on more creative and challenging projects in the future.</p>
-        <h1>Contact Me</h1>
-        <p>I’m always open to connecting, learning, and exploring new opportunities.
+<!DOCTYPE html>
+<html lang="en">
 
-Email:himani@gmail.com
-Phone: 980011223344</p>
-        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of Himani Shrestha, an Information Technology student and aspiring IT professional.">
+    <title>Himani Shrestha - My Portfolio</title>
 
-    </body>
-</html> 
- 
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        img {
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.jpeg"
+             alt="Himani Shrestha Logo"
+             width="80"
+             height="90">
+
+        <h1>Himani Shrestha</h1>
+
+        <p>
+            Information Technology Student | Aspiring IT Professional
+        </p>
+
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#profile">My Profile</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#follow">Follow Me</a></li>
+            </ul>
+        </nav>
+
+        <form action="#" method="get">
+            <label for="search">Search:</label>
+            <input type="search"
+                   id="search"
+                   name="search"
+                   placeholder="Search...">
+
+            <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <article>
+                <h3>Introduction</h3>
+
+                <p>
+                    Hello! My name is <strong>Himani Shrestha</strong>, and I am
+                    a Bachelor's student in Information Technology. I am
+                    passionate about technology, computers, programming, and
+                    web development. I enjoy learning new concepts and
+                    exploring different technologies that can help solve
+                    real-world problems.
+                </p>
+
+                <p>
+                    As an IT student, I am continuously developing my
+                    technical knowledge through academic studies, practical
+                    assignments, projects, and self-learning. I believe that
+                    technology is an important part of modern life, and I am
+                    interested in understanding how different technological
+                    systems work and how they can be used to create useful
+                    solutions.
+                </p>
+            </article>
+
+            <article>
+                <h3>My Interests</h3>
+
+                <p>
+                    I am particularly interested in programming, website
+                    development, databases, and software-related technologies.
+                    During my studies, I have learned the fundamentals of HTML,
+                    CSS, JavaScript, and Python.
+                </p>
+
+                <p>
+                    I enjoy creating websites and experimenting with different
+                    ideas to improve my technical skills. Apart from technical
+                    knowledge, I also value communication, teamwork, creativity,
+                    problem-solving, and continuous learning.
+                </p>
+
+                <p>
+                    My goal is to become a skilled IT professional who can
+                    contribute to meaningful projects and continue learning
+                    new technologies throughout my career.
+                </p>
+            </article>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+
+            <article>
+                <h3>Educational Background</h3>
+
+                <p>
+                    My educational journey has provided me with a strong
+                    foundation in academics and helped me develop an interest
+                    in Information Technology. Throughout my studies, I have
+                    gained knowledge in different academic areas while also
+                    developing important skills such as communication,
+                    problem-solving, teamwork, time management, discipline,
+                    and independent learning.
+                </p>
+
+                <p>
+                    I completed my secondary education at
+                    <strong>The Excelsior School, Swoyambhu</strong>. After
+                    completing my secondary education, I continued my higher
+                    secondary education at
+                    <strong>St. Xavier's College, Maitighar</strong>.
+                </p>
+
+                <p>
+                    I am currently pursuing my Bachelor's degree in Information
+                    Technology at
+                    <strong>Model Institute of Technology, Kamladi</strong>.
+                    My Bachelor's studies are helping me develop both
+                    theoretical and practical knowledge in programming,
+                    web development, database management, software development,
+                    and other areas of Information Technology.
+                </p>
+            </article>
+
+            <article>
+                <h3>My Academic Qualifications</h3>
+
+                <table>
+                    <caption>Academic Qualifications of Himani Shrestha</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">S.N.</th>
+                            <th scope="col">Level</th>
+                            <th scope="col">Institution</th>
+                            <th scope="col">Completion Date</th>
+                            <th scope="col">GPA</th>
+                            <th scope="col">Grade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Secondary</td>
+                            <td>The Excelsior School, Swoyambhu</td>
+                            <td>2020</td>
+                            <td>3.8</td>
+                            <td>A+</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Higher Secondary</td>
+                            <td>St. Xavier's College, Maitighar</td>
+                            <td>2022</td>
+                            <td>3.8</td>
+                            <td>A+</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Bachelor's</td>
+                            <td>Model Institute of Technology, Kamladi</td>
+                            <td>Ongoing</td>
+                            <td>Ongoing</td>
+                            <td>Ongoing</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <article>
+                <h3>Technical Skills</h3>
+
+                <p>
+                    During my academic journey, I have developed a variety
+                    of technical skills that are useful in the field of
+                    Information Technology. I have basic knowledge of
+                    <strong>HTML, CSS, JavaScript, and Python</strong>.
+                </p>
+
+                <p>
+                    I am continuously improving my understanding of these
+                    technologies through practical exercises, assignments,
+                    and personal projects. I am particularly interested in
+                    web development because it allows me to combine creativity
+                    with technical knowledge.
+                </p>
+
+                <ul>
+                    <li>HTML and CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Database Management</li>
+                    <li>Web Development</li>
+                    <li>Basic Programming</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Personal Skills</h3>
+
+                <p>
+                    Along with technical knowledge, I believe that soft skills
+                    are also important for a successful IT professional.
+                    I continuously work on improving my communication,
+                    teamwork, creativity, and problem-solving abilities.
+                </p>
+
+                <ul>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Time Management</li>
+                    <li>Creativity</li>
+                    <li>Adaptability</li>
+                    <li>Continuous Learning</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Technology Knowledge</h3>
+
+                <dl>
+                    <dt><strong>Programming Languages</strong></dt>
+                    <dd>Python, JavaScript, HTML, CSS</dd>
+
+                    <dt><strong>Database Management</strong></dt>
+                    <dd>SQL, NoSQL</dd>
+
+                    <dt><strong>Frameworks</strong></dt>
+                    <dd>Spring, Django</dd>
+                </dl>
+            </article>
+        </section>
+
+        <section id="profile">
+            <h2>My Profile</h2>
+
+            <article>
+                <h3>Personal Profile</h3>
+
+                <p>
+                    This section provides a visual introduction to me as a
+                    student and aspiring IT professional. I believe that a
+                    personal portfolio should include both professional
+                    information and personal identity.
+                </p>
+
+                <p>
+                    The image below provides visitors with a visual
+                    introduction while exploring my academic background,
+                    technical skills, projects, and career interests.
+                </p>
+
+                <figure>
+                    <img src="images/photo.PNG"
+                         alt="Portrait of Himani Shrestha"
+                         width="600"
+                         height="1000">
+
+                    <figcaption>
+                        Himani Shrestha - Information Technology Student
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <article>
+                <h3>Introduction to My Projects</h3>
+
+                <p>
+                    During my Information Technology studies, I have worked
+                    on different academic and practical projects that have
+                    helped me understand how theoretical concepts can be
+                    applied to real-world problems.
+                </p>
+
+                <p>
+                    Projects are an important part of my learning experience
+                    because they allow me to practice programming, web
+                    development, database management, logical thinking,
+                    and problem-solving.
+                </p>
+
+                <p>
+                    While working on projects, I try to focus on creating
+                    solutions that are simple, organized, functional, and
+                    easy for users to understand.
+                </p>
+            </article>
+
+            <article>
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    One of my projects is this personal portfolio website,
+                    which is created using HTML. The purpose of this website
+                    is to present my introduction, education, technical
+                    skills, projects, profile, and contact information in
+                    an organized way.
+                </p>
+
+                <p>
+                    This project has helped me understand HTML structure,
+                    headings, paragraphs, images, tables, forms, navigation
+                    links, and semantic elements. In the future, I would
+                    like to improve this website by adding CSS styling,
+                    JavaScript functionality, responsive design, and
+                    additional interactive features.
+                </p>
+            </article>
+
+            <article>
+                <h3>Academic Projects</h3>
+
+                <p>
+                    I have also worked on academic projects related to
+                    programming, databases, and web development. These
+                    projects have helped me practice writing programs,
+                    organizing information, designing webpages, and solving
+                    technical problems.
+                </p>
+
+                <p>
+                    Working on academic projects has taught me the importance
+                    of planning, testing, debugging, and improving a solution.
+                    It has also helped me understand how teamwork and
+                    communication can contribute to successful project
+                    development.
+                </p>
+            </article>
+
+            <article>
+                <h3>Future Projects</h3>
+
+                <p>
+                    In the future, I would like to work on more advanced
+                    projects related to web development, database systems,
+                    software applications, and modern technologies.
+                </p>
+
+                <p>
+                    I am interested in creating projects that solve practical
+                    problems and provide useful services to users. I also
+                    want to explore different programming languages, frameworks,
+                    databases, and development tools.
+                </p>
+
+                <p>
+                    My goal is to use every project as an opportunity to learn
+                    new concepts, improve my technical skills, and build a
+                    strong professional portfolio.
+                </p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <article>
+                <h3>Get in Touch</h3>
+
+                <p>
+                    I am always interested in connecting with people who
+                    share an interest in technology, education, programming,
+                    and professional development.
+                </p>
+
+                <p>
+                    Whether it is discussing an interesting technology topic,
+                    sharing ideas, working on an academic project, or
+                    exploring future opportunities, I welcome meaningful
+                    communication.
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:himani@gmail.com">
+                        himani@gmail.com
+                    </a>
+                    <br>
+
+                    <strong>Phone:</strong>
+                    <a href="tel:+9779800112233">
+                        +977 9800112233
+                    </a>
+                </p>
+            </article>
+
+            <article>
+                <h3>Send Me a Message</h3>
+
+                <p>
+                    If you have any questions, suggestions, project ideas,
+                    or opportunities that you would like to discuss, you can
+                    send me a message using the form below.
+                </p>
+
+                <form action="#" method="post">
+
+                    <p>
+                        <label for="name">Your Name:</label>
+                        <br>
+                        <input type="text"
+                               id="name"
+                               name="name"
+                               placeholder="Enter your name"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="email">Your Email:</label>
+                        <br>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               placeholder="Enter your email"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="subject">Subject:</label>
+                        <br>
+                        <input type="text"
+                               id="subject"
+                               name="subject"
+                               placeholder="Enter subject"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="message">Your Message:</label>
+                        <br>
+                        <textarea id="message"
+                                  name="message"
+                                  rows="6"
+                                  cols="40"
+                                  placeholder="Write your message here..."
+                                  required></textarea>
+                    </p>
+
+                    <button type="submit">Send Message</button>
+                    <button type="reset">Clear</button>
+
+                </form>
+            </article>
+        </section>
+
+        <aside id="follow">
+            <h2>Follow Me</h2>
+
+            <p>
+                You can also connect with me through my social media and
+                online platforms. These platforms allow me to stay connected
+                with students, professionals, friends, and people interested
+                in technology.
+            </p>
+
+            <nav aria-label="Social Media Links">
+
+                <a href="https://www.instagram.com"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <img src="images/insta.webp"
+                         alt="Visit Himani on Instagram"
+                         width="50"
+                         height="50">
+                </a>
+
+                <a href="https://www.linkedin.com/in/himani-shrestha-7a626a342/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <img src="images/linkdin.png"
+                         alt="Visit Himani on LinkedIn"
+                         width="50"
+                         height="50">
+                </a>
+
+                <a href="https://twitter.com"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <img src="images/twitter.webp"
+                         alt="Visit Himani on Twitter"
+                         width="50"
+                         height="50">
+                </a>
+
+                <a href="https://web.whatsapp.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <img src="images/whatsapp.png"
+                         alt="Contact Himani on WhatsApp"
+                         width="50"
+                         height="50">
+                </a>
+
+                <a href="https://mail.google.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <img src="images/gmail.png"
+                         alt="Send an email through Gmail"
+                         width="50"
+                         height="50">
+                </a>
+
+            </nav>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 Himani Shrestha. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
