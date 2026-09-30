@@ -1,0 +1,790 @@
+/* =========================================================
+   HIMANI SHRESTHA - PERSONAL PORTFOLIO
+   External Stylesheet
+   ========================================================= */
+
+
+/* =========================================================
+   1. GLOBAL STYLES
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+    color: #263238;
+    background-color: #f4f7fb;
+}
+
+
+/* =========================================================
+   2. TYPOGRAPHY
+   ========================================================= */
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #12355b;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.45rem;
+    color: #176b87;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+strong {
+    color: #12355b;
+}
+
+
+/* =========================================================
+   3. LINKS
+   ========================================================= */
+
+a {
+    color: #176b87;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e76f51;
+}
+
+a:focus {
+    outline: 3px solid #f4a261;
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   4. HEADER
+   ========================================================= */
+
+header {
+    background: linear-gradient(135deg, #12355b, #176b87);
+    color: #ffffff;
+    padding: 1.5rem 5%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem 1.5rem;
+    box-shadow: 0 4px 15px rgba(18, 53, 91, 0.2);
+}
+
+header > img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    grid-row: span 2;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 2rem;
+}
+
+
+/* =========================================================
+   5. MAIN NAVIGATION
+   ========================================================= */
+
+header nav {
+    grid-column: 1 / -1;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+header nav li {
+    list-style: none;
+}
+
+header nav a {
+    display: block;
+    color: #ffffff;
+    padding: 0.55rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #e76f51;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   6. SEARCH FORM
+   ========================================================= */
+
+header > form {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+header > form label {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    font: inherit;
+}
+
+header input[type="search"] {
+    width: min(300px, 60vw);
+    padding: 0.65rem 0.8rem;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #263238;
+}
+
+header input[type="search"]:focus {
+    border-color: #f4a261;
+    outline: none;
+}
+
+button {
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 0.65rem 1.1rem;
+    background-color: #e76f51;
+    color: #ffffff;
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #d9573b;
+    transform: translateY(-2px);
+}
+
+button:focus {
+    outline: 3px solid #f4a261;
+    outline-offset: 2px;
+}
+
+
+/* =========================================================
+   7. MAIN CONTENT
+   ========================================================= */
+
+main {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
+section,
+aside {
+    padding: 5rem 0;
+}
+
+
+/* =========================================================
+   8. SECTION CONTAINERS
+   ========================================================= */
+
+.about-container,
+.education-container,
+.skills-container,
+.projects-container,
+.contact-container,
+.follow-container {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 14px;
+    box-shadow: 0 6px 25px rgba(18, 53, 91, 0.08);
+}
+
+section:nth-child(even) .about-container,
+section:nth-child(even) .education-container,
+section:nth-child(even) .skills-container,
+section:nth-child(even) .projects-container,
+section:nth-child(even) .contact-container {
+    border-top: 5px solid #176b87;
+}
+
+section:nth-child(odd) .about-container,
+section:nth-child(odd) .education-container,
+section:nth-child(odd) .skills-container,
+section:nth-child(odd) .projects-container,
+section:nth-child(odd) .contact-container {
+    border-top: 5px solid #e76f51;
+}
+
+
+/* =========================================================
+   9. ABOUT SECTION
+   ========================================================= */
+
+.about-container article {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.about-container article p {
+    grid-column: 1;
+}
+
+.about-container figure {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    text-align: center;
+}
+
+.about-container figure img {
+    width: 100%;
+    max-width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 5px solid #eaf2f8;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+figcaption {
+    margin-top: 0.7rem;
+    color: #607d8b;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+
+/* =========================================================
+   10. EDUCATION SECTION
+   ========================================================= */
+
+.education-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.education-container > h1 {
+    grid-column: 1 / -1;
+}
+
+.education-container article {
+    padding: 1.5rem;
+    background-color: #f7fafc;
+    border-left: 4px solid #176b87;
+    border-radius: 8px;
+}
+
+
+/* =========================================================
+   11. EDUCATION TABLE
+   ========================================================= */
+
+.education-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #ffffff;
+}
+
+.education-container th,
+.education-container td {
+    padding: 0.9rem;
+    text-align: left;
+    border: 1px solid #d9e2ec;
+}
+
+.education-container th {
+    background-color: #12355b;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.education-container tbody tr:nth-child(even) {
+    background-color: #f4f7fb;
+}
+
+.education-container tbody tr:hover {
+    background-color: #eaf4f7;
+}
+
+
+/* =========================================================
+   12. SKILLS SECTION
+   ========================================================= */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.skills-container > h1 {
+    grid-column: 1 / -1;
+}
+
+.skills-container article {
+    background-color: #f7fafc;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-top: 4px solid #176b87;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.skills-container article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(18, 53, 91, 0.12);
+}
+
+
+/* =========================================================
+   13. SKILL LISTS
+   ========================================================= */
+
+.skills-container ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.skills-container li {
+    padding: 0.55rem 0;
+    border-bottom: 1px solid #dce5eb;
+}
+
+.skills-container li::before {
+    content: "✓";
+    color: #e76f51;
+    font-weight: bold;
+    margin-right: 0.6rem;
+}
+
+
+/* =========================================================
+   14. TECHNOLOGY DESCRIPTION LIST
+   ========================================================= */
+
+.skills-container dl {
+    margin-top: 1rem;
+}
+
+.skills-container dt {
+    color: #12355b;
+    margin-top: 1rem;
+}
+
+.skills-container dd {
+    margin-left: 1rem;
+    color: #607d8b;
+}
+
+
+/* =========================================================
+   15. PROJECTS SECTION
+   ========================================================= */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.projects-container > h1 {
+    grid-column: 1 / -1;
+}
+
+.projects-container article {
+    background-color: #f7fafc;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #e76f51;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.projects-container article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 18px rgba(18, 53, 91, 0.1);
+}
+
+
+/* =========================================================
+   16. CONTACT SECTION
+   ========================================================= */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.contact-container > h1 {
+    grid-column: 1 / -1;
+}
+
+.contact-container article {
+    padding: 1.5rem;
+    background-color: #f7fafc;
+    border-radius: 10px;
+}
+
+.contact-container a {
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   17. CONTACT FORM
+   ========================================================= */
+
+.contact-container form p {
+    margin-bottom: 1.2rem;
+}
+
+.contact-container label {
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: #12355b;
+}
+
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #c8d4dc;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #263238;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    outline: none;
+    border-color: #176b87;
+    box-shadow: 0 0 0 3px rgba(23, 107, 135, 0.15);
+}
+
+.contact-container textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-container button {
+    margin-right: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+
+/* =========================================================
+   18. FOLLOW ME / SOCIAL MEDIA
+   ========================================================= */
+
+aside {
+    padding-top: 2rem;
+}
+
+.follow-container {
+    text-align: center;
+    border-top: 5px solid #176b87;
+}
+
+.follow-container nav {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.follow-container nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    padding: 0.3rem;
+    border-radius: 50%;
+    background-color: #eef4f7;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.follow-container nav a:hover {
+    background-color: #dcecf1;
+    transform: translateY(-5px) scale(1.05);
+}
+
+.follow-container img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   19. FOOTER
+   ========================================================= */
+
+footer {
+    background-color: #12355b;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   20. RESPONSIVE DESIGN - TABLETS
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    header {
+        grid-template-columns: auto 1fr;
+    }
+
+    .about-container article {
+        grid-template-columns: 1fr;
+    }
+
+    .about-container figure {
+        grid-column: 1;
+        grid-row: auto;
+        order: -1;
+    }
+
+    .about-container figure img {
+        max-width: 240px;
+        height: 300px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills-container article:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container > h1 {
+        grid-column: 1;
+    }
+
+    .education-container {
+        overflow-x: auto;
+    }
+
+    .education-container table {
+        min-width: 700px;
+    }
+}
+
+
+/* =========================================================
+   21. RESPONSIVE DESIGN - MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 4%;
+    }
+
+    header > img {
+        width: 65px;
+        height: 65px;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.3rem;
+    }
+
+    header nav a {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.08);
+    }
+
+    header > form {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header > form label {
+        display: none;
+    }
+
+    header input[type="search"] {
+        width: 100%;
+    }
+
+    header button {
+        width: 100%;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section,
+    aside {
+        padding: 2.5rem 0;
+    }
+
+    .about-container,
+    .education-container,
+    .skills-container,
+    .projects-container,
+    .contact-container,
+    .follow-container {
+        padding: 1.4rem;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .skills-container,
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-container > h1,
+    .projects-container > h1 {
+        grid-column: 1;
+    }
+
+    .skills-container article:last-child {
+        grid-column: 1;
+    }
+
+    .about-container figure img {
+        max-width: 200px;
+        height: 260px;
+    }
+
+    .education-container {
+        overflow-x: auto;
+    }
+
+    .education-container table {
+        min-width: 650px;
+        font-size: 0.85rem;
+    }
+
+    .education-container th,
+    .education-container td {
+        padding: 0.65rem;
+    }
+
+    .contact-container button {
+        width: 100%;
+        margin: 0.3rem 0;
+    }
+
+    .follow-container nav {
+        gap: 0.7rem;
+    }
+
+    footer {
+        padding: 1.2rem;
+    }
+}
+
+
+/* =========================================================
+   22. ACCESSIBILITY / REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
